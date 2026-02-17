@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+    <link rel="icon" href="/static/images/hangman_step_10.jpeg" type="image/jpeg">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1 class="logo">HANGMAN</h1>
+
+        <!-- Hangman image -->
+        <div id="hangman-image">
+            <img src="/static/images/hangman_step_0.jpeg" alt="Hangman Image" id="hangman-img">
+        </div>
+
+        <!-- Lives section -->
+        <div id="score-lives">
+            <p>Lives: <span id="lives"></span></p>
+        </div>
+
+        <!-- Word display area -->
+        <div id="word-display" class="word-display"></div>
+
+        <!-- Guessed letters section -->
+        <div id="guessed-letters-container">
+            <p>Guessed Letters: <span id="guessed-letters"></span></p>
+        </div>
+
+        <!-- Input field for guessing -->
+        <input type="text" id="guess-input" maxlength="1" placeholder="Enter a letter">
+
+        <!-- Buttons for submit and reset -->
+        <button id="submit-btn">Submit Guess</button>
+        <button id="reset-btn">Reset Game</button>
+
+        <!-- Message container for displaying game messages -->
+        <div id="message-container"></div>
+    </div>
+
+    <script type="module" src="/static/script.js"></script>
+</body>
+</html>
